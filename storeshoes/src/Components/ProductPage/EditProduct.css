@@ -1,0 +1,14 @@
+.EditProductPage{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.EditProductPageh2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

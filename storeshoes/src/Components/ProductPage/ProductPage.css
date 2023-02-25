@@ -1,0 +1,21 @@
+.ProductPage{
+    
+    background-color: antiquewhite;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.Nav-ProductPage{
+ 
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ProductPage-ListProduct{
+    
+    
+    background-color: antiquewhite;
+    display: flex;
+}
