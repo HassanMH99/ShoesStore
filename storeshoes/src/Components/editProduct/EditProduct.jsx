@@ -61,7 +61,7 @@ export function EditProduct(){
       <nav className="EditProductPageh2">
           <h2>Edit Product</h2>
       </nav>
-      <form onSubmit={handleSubmit}>
+      <form className="Form_EditProductPage" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input
@@ -97,8 +97,8 @@ export function EditProduct(){
             onChange={handlePriceChange}
           />
         </div>
-        <button type="submit">Save Changes</button>
-        <button onClick={() => window.location.href=`/products/${productId}`}>
+        <button className="Button_EditProductPage" type="submit">Save Changes</button>
+        <button className="Button_EditProductPage"  onClick={() => window.location.href=`/products/${productId}`}>
           Cancel
         </button>
       </form>

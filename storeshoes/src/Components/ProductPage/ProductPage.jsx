@@ -1,4 +1,4 @@
-import { CardProduct } from './CardProduct'
+import { CardProduct } from '../cardProduct/CardProduct'
 import './ProductPage.css'
 import React,{useState,useEffect} from "react"
 import axios from 'axios'
@@ -18,7 +18,6 @@ export function ProductPage(){
             <div className='ProductPage'>
                 <nav className='Nav-ProductPage'>
                     <h1>Welcome To Produt Page</h1>
-                    
                 </nav>
                
                     <CardProduct products={products}/>

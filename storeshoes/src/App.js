@@ -2,9 +2,9 @@ import React from 'react'
 import './App.css';
 import { HomePage } from './Components/HomePage/HomePage';
 import {createBrowserRouter, RouterProvider,} from "react-router-dom"
-import { ProductPage } from './Components/ProductPage/ProductPage';
-import { ProductDetail } from './Components/ProductPage/ProductDetail';
-import { EditProduct } from './Components/ProductPage/EditProduct';
+import { ProductPage } from './Components/productPage/ProductPage';
+import { ProductDetail } from './Components/productDetails/ProductDetail';
+import { EditProduct } from './Components/editProduct/EditProduct';
 function App() {
   const router = createBrowserRouter([
     {

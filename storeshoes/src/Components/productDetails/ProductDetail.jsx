@@ -19,7 +19,6 @@ export function ProductDetail(){
   if (!product) {
     return <div>Loading...</div>;
   }
-  console.log(product);
   const handleDelete = () => {
     showDeletePopup();
   };
@@ -48,11 +47,11 @@ export function ProductDetail(){
             <h1>Details of {product.name}</h1>
             <button onClick={handleEdit} className="Button-ProductDetails">Edit</button>
         </nav>
-      <p>{product.descrption}</p>
-      <img src={product.img} alt={product.name} />
-      <p>Price: {product.price}</p>
+      <p className="ProductDetails_p">{product.descrption}</p>
+      <img className="ProductDetails_img" src={product.img} alt={product.name} />
+      <p className="ProductDetails_p">Price: {product.price+"$"}</p>
       
-      <Link to="/products"><button>Back to all products</button></Link>
+      <Link className="Link_ProductDetails" to="/products"><button className="Button-Back">Back to all products</button></Link>
       {showPopup && (
         <div className="popup">
           <p>Are you sure you want to delete this product?</p>
