@@ -6,6 +6,9 @@ export function HomePage(){
     }
 
     return <div className="HomePage">
-        <button className="HomePage-button"><a href="/products">Go To Store</a></button>
+            <nav className='Nav-HomePage'>
+              <h1>Welcome To My App</h1>
+            </nav>
+        <div className='MainHomePage'><button className="HomePage-button"><a href="/products">Go To Store</a></button></div>
     </div>
 }

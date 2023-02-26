@@ -5,10 +5,11 @@ import {createBrowserRouter, RouterProvider,} from "react-router-dom"
 import { ProductPage } from './Components/productPage/ProductPage';
 import { ProductDetail } from './Components/productDetails/ProductDetail';
 import { EditProduct } from './Components/editProduct/EditProduct';
+import { AddProduct } from './Components/addProduct/AddProduct';
 function App() {
   const router = createBrowserRouter([
     {
-      path:'/',
+      path:'/home',
       element:<HomePage/>
 
     },{
@@ -21,6 +22,9 @@ function App() {
     },{
       path:"/products/:productId/edit",
       element:<EditProduct/>
+    },{
+      path:"/add",
+      element:<AddProduct/>
     }
 
   ])

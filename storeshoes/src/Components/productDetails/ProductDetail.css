@@ -105,3 +105,45 @@ align-items: center;
   .Link_ProductDetails{
     text-decoration: none;
   }
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .popup p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .popup button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .popup button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .popup button:last-child {
+    background-color: #f44336;
+  }
+  
+  .popup button:last-child:hover {
+    background-color: #c62828;
+  }
+  

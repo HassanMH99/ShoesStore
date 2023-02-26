@@ -17,7 +17,9 @@ export function ProductPage(){
         return (
             <div className='ProductPage'>
                 <nav className='Nav-ProductPage'>
+                  <button className='ProductPage_button'><a href="/home">Home</a></button>
                     <h1>Welcome To Produt Page</h1>
+                    <button className='ProductPage_button'><a href="/add">ADD</a></button>
                 </nav>
                
                     <CardProduct products={products}/>

@@ -4,7 +4,7 @@ export function CardProduct({products}){
     return  <div className='CardProduct-ListOfit'>
     {products.map(product => (
       <div className="CardProduct" key={product.id}>
-        <Link to={`/products/${product.id}`}>
+        <Link className='Link_CardProduct' to={`/products/${product.id}`}>
         <h2 className='NameProduct'>{product.name}</h2>
         </Link>
         
